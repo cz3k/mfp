@@ -3,8 +3,8 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "🪴 Musik für Pflanzen",
   description: "Experimentelle Kleingartenkonzerte in Dresden",
+  appearance: 'dark',
   themeConfig: {
-    appearance: 'dark',
     nav: [
       { text: 'About', link: '/about' }
     ],
@@ -44,7 +44,7 @@ export default defineConfig({
           { text: '02 - HALLO:Radio', link: '/220609' },
           { text: '01 - kühltrans & nagel', link: '/220525' }
         ]
-      }            
+      }
     ],
     socialLinks: [
       {
