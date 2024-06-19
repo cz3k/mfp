@@ -31,18 +31,19 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 18
-          cache: npm # or pnpm / yarn
+          node-version: 20
+          cache: npm
+          cache-dependency-path: '**/package-lock.json'  
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Install dependencies
-        run: npm ci 
+        run: cd docs && npm ci 
       - name: Build with VitePress
-        run: npm run docs:build
+        run: cd docs && npm run docs:build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .vitepress/dist
+          path: docs/.vitepress/dist
 
   # Deployment job
   deploy:
