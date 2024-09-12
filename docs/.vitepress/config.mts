@@ -4,6 +4,13 @@ export default defineConfig({
   title: "🪴 Musik für Pflanzen",
   description: "Experimentelle Kleingartenkonzerte in Dresden",
   appearance: 'dark',
+  head: [
+    ['script', {
+      defer: true,
+      'data-domain': 'musikfuerpflanzen.de',
+      src: 'https://plausible.0dd.eu/js/script.js'
+    }]
+  ],
   themeConfig: {
     nav: [
       { text: 'About', link: '/about' }
