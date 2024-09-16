@@ -23,6 +23,7 @@ export default defineConfig({
       {
         text: '2024',
         items: [
+          { text: '20 - Special Live Edition', link: '/240919' },
           { text: '19 - Felix Ermacora', link: '/240905' },
           { text: '18 - Cwiejung', link: '/240815' },
           { text: '17 - Jonas Gerigk', link: '/240613' },
