@@ -1,6 +1,6 @@
-# Musik für Pflanzen
+# [Musik für Pflanzen](https://musikfuerpflanzen.de/)
 
-This website is built using the static site generator [VitePress](https://vitepress.dev).
+Made with [VitePress](https://vitepress.dev).
 
 ## Local Development
 ```bash
