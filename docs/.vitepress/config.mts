@@ -1,6 +1,11 @@
 import { defineConfig } from 'vitepress'
+import { genFeed } from './genFeed.js'
+
+const hostname: string = 'https://musikfuerpflanzen.de'
 
 export default defineConfig({
+  cleanUrls: true, // https://vitepress.dev/guide/routing#generating-clean-url
+  buildEnd: genFeed,
   title: "🪴 Musik für Pflanzen",
   description: "Experimentelle Kleingartenkonzerte in Dresden",
   appearance: 'dark',
@@ -57,11 +62,10 @@ export default defineConfig({
       }
     ],
     socialLinks: [
-      {
-        icon: {
-          svg: '<svg role="img" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg"><title>Telegram Channel</title><path d="M14.5 1.5L0.5 6.5L4.5 8.5L10.5 4.5L6.5 9.5L12.5 13.5L14.5 1.5Z"/></svg>'
+      { icon: {
+          svg: '<svg role="s-fill" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><title>RSS-Feed</title><path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm1.5 2.5c5.523 0 10 4.477 10 10a1 1 0 1 1-2 0 8 8 0 0 0-8-8 1 1 0 0 1 0-2m0 4a6 6 0 0 1 6 6 1 1 0 1 1-2 0 4 4 0 0 0-4-4 1 1 0 0 1 0-2m.5 7a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"/></svg>'
         },
-        link: 'https://t.me/+L-Zwbj1SrWNhY2Ji',
+        link: '/feed.rss' 
       },
       {
         icon: {
@@ -69,8 +73,13 @@ export default defineConfig({
         },
         link: 'mailto:mail@musikfuerpflanzen.de',
       },
+      {
+        icon: {
+          svg: '<svg role="img" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><title>Telegram Channel</title><path d="M14.5 1.5L0.5 6.5L4.5 8.5L10.5 4.5L6.5 9.5L12.5 13.5L14.5 1.5Z"/></svg>'
+        },
+        link: 'https://t.me/+L-Zwbj1SrWNhY2Ji',
+      },
       { icon: 'github', link: 'https://github.com/cz3k/mfp' }
-
-    ]
+    ],
   }
 })
