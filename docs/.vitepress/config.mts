@@ -1,8 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { genFeed } from './genFeed.js'
 
-const hostname: string = 'https://musikfuerpflanzen.de'
-
 export default defineConfig({
   cleanUrls: true, // https://vitepress.dev/guide/routing#generating-clean-url
   buildEnd: genFeed,
@@ -10,11 +8,14 @@ export default defineConfig({
   description: "Experimentelle Kleingartenkonzerte in Dresden",
   appearance: 'dark',
   head: [
-    ['script', {
-      defer: true,
-      'data-domain': 'musikfuerpflanzen.de',
-      src: 'https://plausible.0dd.eu/js/script.js'
-    }]
+    [
+      'script', 
+      {
+        defer: 'true',
+        src: 'https://plausible.0dd.eu/js/script.js',
+        'data-domain': 'musikfuerpflanzen.de'
+      }
+    ]
   ],
   themeConfig: {
     nav: [
