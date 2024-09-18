@@ -6,6 +6,6 @@ hero:
   name: "Musik für Pflanzen"
 ---
 
-![](/index.jpg)
+![](/mfp.jpg)
 
 > Experimentelle Kleingartenkonzerte in Dresden

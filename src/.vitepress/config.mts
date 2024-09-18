@@ -1,9 +1,13 @@
 import { defineConfig } from 'vitepress'
-import { genFeed } from './genFeed.js'
+import generateFeed from './generateFeed'
+
+const hostname: string = 'https://musikfuerpflanzen.de'
 
 export default defineConfig({
   cleanUrls: true, // https://vitepress.dev/guide/routing#generating-clean-url
-  buildEnd: genFeed,
+  buildEnd: async (context) => {
+    generateFeed(context, hostname)
+  },
   title: "🪴 Musik für Pflanzen",
   description: "Experimentelle Kleingartenkonzerte in Dresden",
   appearance: 'dark',
@@ -19,7 +23,9 @@ export default defineConfig({
   ],
   themeConfig: {
     nav: [
-      { text: 'About', link: '/about' }
+      { text: 'About', link: '/about' },
+      { text: 'RSS Feed', link: '/feed.rss' },
+      { text: 'Telegram Channel', link: 'https://t.me/+L-Zwbj1SrWNhY2Ji' }
     ],
     search: {
       provider: 'local'
@@ -63,22 +69,11 @@ export default defineConfig({
       }
     ],
     socialLinks: [
-      { icon: {
-          svg: '<svg role="s-fill" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><title>RSS-Feed</title><path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm1.5 2.5c5.523 0 10 4.477 10 10a1 1 0 1 1-2 0 8 8 0 0 0-8-8 1 1 0 0 1 0-2m0 4a6 6 0 0 1 6 6 1 1 0 1 1-2 0 4 4 0 0 0-4-4 1 1 0 0 1 0-2m.5 7a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"/></svg>'
-        },
-        link: '/feed.rss' 
-      },
       {
         icon: {
           svg: '<svg role="img" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><title>E-Mail</title><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/></svg>'
         },
         link: 'mailto:mail@musikfuerpflanzen.de',
-      },
-      {
-        icon: {
-          svg: '<svg role="img" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><title>Telegram Channel</title><path d="M14.5 1.5L0.5 6.5L4.5 8.5L10.5 4.5L6.5 9.5L12.5 13.5L14.5 1.5Z"/></svg>'
-        },
-        link: 'https://t.me/+L-Zwbj1SrWNhY2Ji',
       },
       { icon: 'github', link: 'https://github.com/cz3k/mfp' }
     ],
