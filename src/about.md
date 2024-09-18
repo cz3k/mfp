@@ -1,3 +1,7 @@
+---
+publish: false
+---
+
 Musik für Pflanzen sind:
 
 - [baby_sel_1001](https://soundcloud.com/selmel)

@@ -1,32 +1,52 @@
 import { defineConfig } from 'vitepress'
+import { RSSOptions, RssPlugin } from 'vitepress-plugin-rss'
+
+const baseUrl = 'https://musikfuerpflanzen.de'
+const RSS: RSSOptions = {
+  title: 'Musik für Pflanzen',
+  description: 'Experimentelle Kleingartenkonzerte in Dresden',
+  baseUrl,
+  icon: false,
+  language: 'de',
+  copyright: 'Copyright (c) 2022-present, Musik für Pflanzen',
+}
 
 export default defineConfig({
-  title: "🪴 Musik für Pflanzen",
-  description: "Experimentelle Kleingartenkonzerte in Dresden",
+  cleanUrls: true, // https://vitepress.dev/guide/routing#generating-clean-url
+  vite: {
+    plugins: [RssPlugin(RSS)]
+  },
+  title: 'Musik für Pflanzen',
+  description: 'Experimentelle Kleingartenkonzerte in Dresden',
   appearance: 'dark',
   head: [
-    ['script', {
-      defer: true,
-      'data-domain': 'musikfuerpflanzen.de',
-      src: 'https://plausible.0dd.eu/js/script.js'
-    }]
+    [
+      'script', 
+      {
+        defer: 'true',
+        src: 'https://plausible.0dd.eu/js/script.js',
+        'data-domain': 'musikfuerpflanzen.de'
+      }
+    ]
   ],
   themeConfig: {
-    nav: [
-      { text: 'About', link: '/about' }
-    ],
+    outline: false,
     search: {
       provider: 'local'
     },
-    outline: false,
+    nav: [
+      { text: 'About', link: '/about' },
+      { text: 'Telegram Channel', link: 'https://t.me/+L-Zwbj1SrWNhY2Ji' },
+      { text: 'RSS Feed', link: 'https://musikfuerpflanzen.de/feed.rss' }
+    ],
     sidebar: [
       {
         text: '2024',
         items: [
           { text: '20 - Special Live Edition', link: '/240919' },
           { text: '19 - Felix Ermacora', link: '/240905' },
-          { text: '18 - Cwiejung', link: '/240815' },
-          { text: '17 - Jonas Gerigk', link: '/240613' },
+          { text: '18 - Cwiejung | Junus & Internet Offline', link: '/240815' },
+          { text: '17 - Jonas Gerigk | 0rb', link: '/240613' },
           { text: '16 - Francesco Fonassi', link: '/240516' }
         ]
       },
@@ -46,7 +66,7 @@ export default defineConfig({
         items: [
           { text: '09 - Drone Special', link: '/220915' },
           { text: '08 - Drone Operatør | WOSTO', link: '/220901' },
-          { text: '07 - ghostdog & störenfried', link: '/220818' },
+          { text: '07 - ghostdog | störenfried', link: '/220818' },
           { text: '06 - Electric Evelyn', link: '/220804' },
           { text: '05 - Houschyar | Eylül Deniz', link: '/220721' },
           { text: '04 - SHIKOBA', link: '/220622' },
@@ -59,18 +79,11 @@ export default defineConfig({
     socialLinks: [
       {
         icon: {
-          svg: '<svg role="img" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg"><title>Telegram Channel</title><path d="M14.5 1.5L0.5 6.5L4.5 8.5L10.5 4.5L6.5 9.5L12.5 13.5L14.5 1.5Z"/></svg>'
-        },
-        link: 'https://t.me/+L-Zwbj1SrWNhY2Ji',
-      },
-      {
-        icon: {
           svg: '<svg role="img" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><title>E-Mail</title><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/></svg>'
         },
         link: 'mailto:mail@musikfuerpflanzen.de',
       },
       { icon: 'github', link: 'https://github.com/cz3k/mfp' }
-
     ]
   }
 })
