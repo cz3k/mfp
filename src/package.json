@@ -9,6 +9,6 @@
     "docs:preview": "vitepress preview"
   },
   "dependencies": {
-    "vitepress-plugin-rss": "^0.2.10"
+    "vitepress-plugin-rss": "^0.3.0"
   }
 }
