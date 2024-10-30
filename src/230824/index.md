@@ -5,7 +5,7 @@ date: 2023-08-17
 
 # 2023-08-24
 
-![](/230824.jpg)
+![](./230824.jpg)
 
 Liebe Pflanzenmenschis,
 

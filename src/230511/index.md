@@ -5,7 +5,7 @@ date: 2023-05-01
 
 # 2023-05-07
 
-![](/230511.webp)
+![](./230511.webp)
 
 
 Wir beginnen die Saison mit unserer ersten Gardening Session am 11.05. mit:

@@ -5,7 +5,7 @@ date: 2023-05-25
 
 # 2023-06-01
 
-![](/230601.jpg)
+![](./230601.jpg)
 
 Zu unserem zweiten Knospentreiben im Grünen beehren uns aus Berlin:
 

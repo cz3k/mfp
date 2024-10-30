@@ -5,7 +5,7 @@ date: 2022-06-02
 
 # 2022-06-09
 
-![](/220609.jpg)
+![](./220609.jpg)
 
 Salut liebe Pflanz-people.
 

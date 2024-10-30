@@ -5,7 +5,7 @@ date: 2022-09-08
 
 # 2022-09-15
 
-![](/220915.jpg)
+![](./220915.jpg)
 
 Liebe Pflanzenmenschen,
 

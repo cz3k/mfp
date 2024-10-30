@@ -5,13 +5,13 @@ date: 2024-05-07
 
 # 2024-05-14
 
-<img src="/240516.jpg" width="400">
+<img src="./240516.jpg" width="400">
 
 MUSIK- UND PFLANZENLIEBENDE 
 
 Diesen Donnerstag ist Saisonauftakt im E-Kranz mit:
 - [Francesco Fonassi](https://soundcloud.com/hex-aux) / Italia (live)
-- [MfP Alltars](about)
+- [MfP Alltars](/about/)
 
 ## Food
 Gimbap und Soju 🇰🇷

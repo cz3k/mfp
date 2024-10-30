@@ -43,36 +43,36 @@ export default defineConfig({
       {
         text: '2024',
         items: [
-          { text: '20 - Special Live Edition', link: '/240919' },
-          { text: '19 - Felix Ermacora', link: '/240905' },
-          { text: '18 - Cwiejung | Junus & Internet Offline', link: '/240815' },
-          { text: '17 - Jonas Gerigk | 0rb', link: '/240613' },
-          { text: '16 - Francesco Fonassi', link: '/240516' }
+          { text: '20 - Special Live Edition', link: '/240919/' },
+          { text: '19 - Felix Ermacora', link: '/240905/' },
+          { text: '18 - Cwiejung | Junus & Internet Offline', link: '/240815/' },
+          { text: '17 - Jonas Gerigk | 0rb', link: '/240613/' },
+          { text: '16 - Francesco Fonassi', link: '/240516/' }
         ]
       },
       {
         text: '2023',
         items: [
-          { text: '15 - baby_sel_1001 | hagoromo', link: '/230914' },
-          { text: '14 - Philipp Matalla | Ann-Marie Najderek & Ludens', link: '/230824' },
-          { text: '13 - Bronko Taubenheim | Steve Osten', link: '/230713' },
-          { text: '12 - Edflix & chill', link: '/230622' },
-          { text: '11 - low end | DJ Global Flex', link: '/230601' },
-          { text: '10 - Shannon Soundquist | Nimasterblaster', link: '/230511' }
+          { text: '15 - baby_sel_1001 | hagoromo', link: '/230914/' },
+          { text: '14 - Philipp Matalla | Ann-Marie Najderek & Ludens', link: '/230824/' },
+          { text: '13 - Bronko Taubenheim | Steve Osten', link: '/230713/' },
+          { text: '12 - Edflix & chill', link: '/230622/' },
+          { text: '11 - low end | DJ Global Flex', link: '/230601/' },
+          { text: '10 - Shannon Soundquist | Nimasterblaster', link: '/230511/' }
         ]
       },
       {
         text: '2022',
         items: [
-          { text: '09 - Drone Special', link: '/220915' },
-          { text: '08 - Drone Operatør | WOSTO', link: '/220901' },
-          { text: '07 - ghostdog | störenfried', link: '/220818' },
-          { text: '06 - Electric Evelyn', link: '/220804' },
-          { text: '05 - Houschyar | Eylül Deniz', link: '/220721' },
-          { text: '04 - SHIKOBA', link: '/220622' },
-          { text: '03 - Spiritczualic Enhancement Center', link: '/220610' },
-          { text: '02 - HALLO:Radio', link: '/220609' },
-          { text: '01 - kühltrans & nagel', link: '/220525' }
+          { text: '09 - Drone Special', link: '/220915/' },
+          { text: '08 - Drone Operatør | WOSTO', link: '/220901/' },
+          { text: '07 - ghostdog | störenfried', link: '/220818/' },
+          { text: '06 - Electric Evelyn', link: '/220804/' },
+          { text: '05 - Houschyar | Eylül Deniz', link: '/220721/' },
+          { text: '04 - SHIKOBA', link: '/220622/' },
+          { text: '03 - Spiritczualic Enhancement Center', link: '/220610/' },
+          { text: '02 - HALLO:Radio', link: '/220609/' },
+          { text: '01 - kühltrans & nagel', link: '/220525/' }
         ]
       }
     ],

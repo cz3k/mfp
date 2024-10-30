@@ -5,7 +5,7 @@ date: 2022-08-28
 
 # 2022-09-01
 
-![](/220901.jpg)
+![](./220901.jpg)
 
 **Important:** Die Tage werden kürzer, wir starten daher morgen schon 17 Uhr
 

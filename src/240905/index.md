@@ -5,7 +5,7 @@ date: 2024-08-30
 
 # 2024-09-05
 
-![](/240905.jpg)
+![](./240905.jpg)
 
 <s>Diesen Donnerstag wird wieder gepflanzt 🌿</s>
 

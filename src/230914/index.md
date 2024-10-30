@@ -3,9 +3,9 @@ title: "Edition 15: baby_sel_1001 | hagoromo"
 date: 2023-09-05
 ---
 
-# 2023-09-13
+# 2023-09-14
 
-![](/230924.jpg)
+![](./230914.jpg)
 
 Zum diesjährigen Saisonfinale laden wir Euch 🧡lich zu einem genussvollen ERNTEDANK-Spezial am 14.09. in den frühherbstlichen Eichenkranz ein.
 

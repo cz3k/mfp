@@ -8,7 +8,7 @@ date: 2024-09-16
 🍁  🍂
 
 
-![](/240919.jpg)
+![](./240919.jpg)
 
 [saxtape (brescia 🇮🇹)](https://villarec.bandcamp.com/album/tape)
 

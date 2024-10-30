@@ -5,7 +5,7 @@ date: 2022-05-18
 
 # 2022-05-25
 
-![](/220525.jpg)
+![](./220525.jpg)
 Hallo Pflanzen-Aficionadas und -nados!
 
 Morgen, Mittwoch, ab 17 Uhr gibt es am Eichenkranz eine neue Auflage Musik Für Pflanzen.
