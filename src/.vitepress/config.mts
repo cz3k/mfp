@@ -31,6 +31,12 @@ export default defineConfig({
     ],
     sidebar: [
       {
+        text: '2025',
+        items: [
+          { text: '21 - Syncboy | Occupied Head', link: '/250612/' },
+        ]
+      },
+      {
         text: '2024',
         items: [
           { text: '20 - Special Live Edition', link: '/240919/' },
