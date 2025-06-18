@@ -4,6 +4,7 @@ publish: false
 
 Musik für Pflanzen sind:
 
+- [electric evelyn](https://soundcloud.com/electricevelyn)
 - [baby_sel_1001](https://soundcloud.com/selmel)
 - [permacouture](https://soundcloud.com/perma_couture)
 - [tochter aus e](https://soundcloud.com/tochterause)
