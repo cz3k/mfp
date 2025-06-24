@@ -19,6 +19,16 @@ export default defineConfig({
   title: 'Musik für Pflanzen',
   description: 'Experimentelle Kleingartenkonzerte in Dresden',
   appearance: 'dark',
+    head: [
+    [
+      'script',
+      {
+        defer: 'true',
+        src: 'https://umami.0dd.eu/script.js',
+        'data-website-id': '476ec305-da78-497f-98f2-4cb7a31e7413'
+      }
+    ]
+  ],
   themeConfig: {
     outline: false,
     search: {
